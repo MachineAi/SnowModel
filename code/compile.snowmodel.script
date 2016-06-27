@@ -1,0 +1,36 @@
+path1=/nfs/attic/dfh/beamerj/GOA/cfsr/wo_pet/1980_2014/code/
+path2=/nfs/attic/dfh/beamerj/GOA/cfsr/wo_pet/1980_2014/code/
+
+#path1=/work/02318/beamerj/snowmodel_mod/2005_2006/code/
+#path2=/work/02318/beamerj/snowmodel_mod/2005_2006/code/
+
+filename1=enbal_code.f
+filename2=micromet_code.f
+filename3=preprocess_code.f
+filename4=readparam_code.f
+filename5=snowmodel_main.f
+filename6=snowpack_code.f
+filename7=snowtran_code.f
+
+filename8=dataassim_user.f
+filename9=outputs_user.f
+
+gfortran -O3 -mcmodel=medium -I$path1 -o ../snowmodel $path1$filename1 $path1$filename2 $path1$filename3 $path1$filename4 $path1$filename5 $path1$filename6 $path1$filename7 $path2$filename8 $path2$filename9
+
+#f95 -O3 -mcmodel=medium -I$path1 -o ../snowmodel $path1$filename1 $path1$filename2 $path1$filename3 $path1$filename4 $path1$filename5 $path1$filename6 $path1$filename7 $path2$filename8 $path2$filename9
+
+#f77 -O3 -I$path1 -o ../snowmodel $path1$filename1 $path1$filename2 $path1$filename3 $path1$filename4 $path1$filename5 $path1$filename6 $path1$filename7 $path2$filename8 $path2$filename9
+
+#filename1=enbal_code.o
+#filename2=micromet_code.o
+#filename3=preprocess_code.o
+#filename4=readparam_code.o
+#filename5=snowmodel_main.o
+#filename6=snowpack_code.o
+#filename7=snowtran_code.o
+
+#filename8=dataassim_user.o
+#filename9=outputs_user.o
+
+#rm $filename1 $filename2 $filename3 $filename4 $filename5   $filename6 $filename7 $filename8 $filename9
+
