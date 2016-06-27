@@ -1,8 +1,10 @@
 c outputs_user.f
 
 c some changes
+<<<<<<< HEAD
 c some more changes by dh
 c yet more changes by dh
+>>>>>>> origin/master
 
 ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
